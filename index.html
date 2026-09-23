@@ -1,118 +1,129 @@
 <!DOCTYPE html>
-<html lang="PL-pl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <link rel="shortcut icon" href="./assets/images/favicon_web.png" type="image/x-icon">
-    <link rel="stylesheet" href="./assets/styles.CSS">
+    <link rel="stylesheet" href="./assets/styles.css">
 </head>
 <body>
 
-    <!-- NAVIGATION BAR -->
-    <nav class="navbar">
-        <div class="nav-links">
-            <a href="#hero" class="nav-btn active">Home</a>
-            <a href="#experience" class="nav-btn">Experience</a>
-            <a href="#hobby" class="nav-btn">Hobbies</a>
-            <a href="#contact" class="nav-btn">Contact</a>
+    <nav class="navigation-bar">
+        <div class="content-wrapper nav-content">
+            <a href="#home" class="nav-logo">PORTFOLIO</a>
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#hobbies" class="nav-link">Hobbies</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
         </div>
     </nav>
 
-    <div class="scroll-container">
-        
-        <!-- MAIN HERO SCREEN -->
-        <section id="hero" class="screen hero-screen">
+    <main class="scroll-container">
+        <section id="home" class="page-section">
             <div class="content-wrapper text-center">
-                <h1 class="neon-text pink-glow">Hello, I'm a Developer</h1>
-                <p class="subtitle">Welcome to my digital space.</p>
-                <div class="scroll-indicator">
-                    <span>Scroll Down</span>
-                    <div class="arrow">↓</div>
-                </div>
-            </div>
-        </section>
-
-        <!-- EXPERIENCE SCREEN -->
-        <section id="experience" class="screen experience-screen">
-            <div class="content-wrapper">
-                <h2 class="neon-text cyan-glow">My Experience</h2>
-                <div class="experience-card">
-                    <p class="honest-text">
-                        To be completely honest, I am currently at the beginning of my journey in this field. I haven't held professional roles yet, but I am extremely passionate about learning and building. My current portfolio consists mostly of rookie and personal projects, but I am constantly expanding my knowledge.
-                    </p>
-                    <h3 class="skills-title">Technologies & Languages:</h3>
-                    <ul class="skills-list">
-                        <li>HTML</li>
-                        <li>CSS</li>
-                        <li>JavaScript</li>
-                        <li>PHP</li>
-                        <li>C++</li>
-                        <li>C#</li>
-                        <li>Python</li>
-                        <li>React</li>
-                        <li class="special-skill">AI Development <span>(Personal Project: Custom AI Assistant)</span></li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <!-- HOBBY SCREEN -->
-        <section id="hobby" class="screen hobby-screen">
-            <div class="content-wrapper">
-                <h2 class="neon-text purple-glow">My Hobbies</h2>
-                <p class="hobby-intro">
-                    Beyond coding, I love spending my time on drawing, watching anime, playing games, learning languages (like Japanese), building friendships, and just being true to myself. Here are some of my recent lineart highlights!
+                <p class="subtitle">Welcome to my space</p>
+                <h1>HELLO WORLD</h1>
+                <p class="hero-text">
+                    Diving into code, exploring creativity, and building the future one step at a time.
                 </p>
-                
-                <!-- Image Infinite Carousel -->
-                <div class="carousel-container">
-                    <div class="carousel-track">
-                        <div class="carousel-item"><img src="./assets/images/projectImage1.png" alt="Zhao Zenless Zone Zero"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage2.png" alt="Griffith x Guts - Berserk"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage3.png" alt="Mahiru Shiina Shark - Angel Next Door"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage4.png" alt="Personal Fox Drawing"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage5.png" alt="Bocchi - Bocchi The Rock!"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage1.png" alt="Zhao Zenless Zone Zero"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage2.png" alt="Griffith x Guts - Berserk"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage3.png" alt="Mahiru Shiina Shark - Angel Next Door"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage4.png" alt="Personal Fox Drawing"></div>
-                        <div class="carousel-item"><img src="./assets/images/projectImage5.png" alt="Bocchi - Bocchi The Rock!"></div>
+            </div>
+        </section>
+
+        <section id="experience" class="page-section">
+            <div class="content-wrapper">
+                <h2>My Experience</h2>
+                <div class="experience-card text-center">
+                    <p>
+                        My experience is rooted in genuine curiosity and hands-on projects. I am self-driven: breaking things, fixing them, and learning along the way.
+                    </p>
+                    <p>
+                        Below are the languages and technologies I've been actively mastering.
+                    </p>
+                    <div class="skills-grid">
+                        <div class="skill-item">HTML & CSS</div>
+                        <div class="skill-item">JavaScript</div>
+                        <div class="skill-item">PHP</div>
+                        <div class="skill-item">C++</div>
+                        <div class="skill-item">C#</div>
+                        <div class="skill-item">Python</div>
+                        <div class="skill-item">React</div>
+                        <div class="skill-item skill-ai">
+                            <span class="skill-label">Personal Project</span>
+                            AI Development (Personal Assistant)
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- FOOTER -->
-        <footer id="contact" class="screen footer-screen">
-            <div class="content-wrapper text-center">
-                <h2 class="neon-text pink-glow small-neon">Let's Connect</h2>
-                <div class="contact-links">
-                    <a href="mailto:privateInfo@example.com" class="contact-btn">E-mail</a>
-                    <a href="tel:NotToday123" class="contact-btn">Phone</a>
-                    <a href="https://github.com/Welfy223" target="_blank" class="contact-btn">GitHub</a>
-                    <a href="#" class="contact-btn">Discord</a>
+        <section id="hobbies" class="page-section">
+            <div class="content-wrapper hobbies-layout">
+                <div class="hobbies-text">
+                    <h2>Beyond The Screen</h2>
+                    <h3>Finding Balance</h3>
+                    <p>
+                        When I step away from the keyboard, I immerse myself in the rich narratives of Anime and Games. I'm also on a journey to learn Japanese - embracing a new way of thinking and communicating.
+                    </p>
+                    <p>
+                        Recently, I've discovered a passion for drawing. Here is some of my lineart.
+                    </p>
                 </div>
-                <p class="copyright">&copy; 2026 Crafted with Passion</p>
+                
+                <div class="carousel-container">
+                    <div class="carousel-spinner">
+                        <div class="carousel-item"><img src="./assets/images/projectImage1.png" alt="Zhao Zenless Zone Zero"></div>
+                        <div class="carousel-item"><img src="./assets/images/projectImage2.png" alt="Griffith x Guts - Berserk"></div>
+                        <div class="carousel-item"><img src="./assets/images/projectImage3.png" alt="Mahiru Shiina Shark - Angel Next Door"></div>
+                        <div class="carousel-item"><img src="./assets/images/projectImage4.png" alt="Personal Fox Drawing"></div>
+                        <div class="carousel-item"><img src="./assets/images/projectImage5.png" alt="Bocchi - Bocchi The Rock!"></div>
+                        <div class="carousel-item"><img src="./assets/images/projectImage6.png" alt="Gawr Gura - Hololive"></div>
+                        <div class="carousel-item"><img src="./assets/images/projectImage7.png" alt="Uzumaki Naruto - Naruto"></div>
+                        <div class="carousel-item"><img src="./assets/images/projectImage8.png" alt="Faputa - Made In Abyss"></div>
+                    </div>
+                </div>
             </div>
-        </footer>
+        </section>
 
-    </div>
+        <section id="contact" class="page-section">
+            <div class="content-wrapper text-center">
+                <h2>Let's Connect</h2>
+                <p class="contact-text">
+                    Whether it's about coding projects, discussing anime, or sharing drawing tips, I'm always open to making new connections.
+                </p>
+                <div class="contact-grid">
+                    <a href="mailto:kacper34221@gmail.com" class="contact-card">
+                        <span class="contact-label">Email</span>
+                        <span class="contact-value">kacper34221@gmail.com</span>
+                    </a>
+                    <a href="#" class="contact-card">
+                        <span class="contact-label">Discord</span>
+                        <span class="contact-value">Welfy223</span>
+                    </a>
+                    <a href="https://github.com/Welfy223" target="_blank" class="contact-card">
+                        <span class="contact-label">GitHub</span>
+                        <span class="contact-value">@Welfy223</span>
+                    </a>
+                </div>
+                <p class="footer-copy">&copy; 2026. Designed and built with pure HTML, CSS & JS.</p>
+            </div>
+        </section>
+    </main>
 
-    <!-- LIGHTBOX IMAGE PREVIEW MODAL -->
-    <div id="image-modal" class="modal">
-        <span class="modal-close" id="modal-close">&times;</span>
-
-        <button class="modal-prev" id="modal-prev">&#10094;</button>
-        <button class="modal-next" id="modal-next">&#10095;</button>
-
-        <div class="modal-content-wrapper">
-            <img class="modal-image" id="modal-img" src="" alt="Lineart Preview">
-            <p id="modal-caption" class="modal-caption"></p>
+    <!-- Lightbox Modal for Carousel -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <button class="lightbox-prev">&#10094;</button>
+        <div class="lightbox-content-wrapper">
+            <img class="lightbox-image" id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption" class="lightbox-caption"></div>
         </div>
+        <button class="lightbox-next">&#10095;</button>
     </div>
 
-    <!-- Script -->
-    <script src="./assets/script.JS"></script>
+    <script src="./assets/script.js"></script>
 </body>
 </html>
